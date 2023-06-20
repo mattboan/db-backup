@@ -1,0 +1,15 @@
+version: '3'
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        networks:
+            - madmen_network
+        restart: always
+        env_file:
+            - .env
+
+networks:
+    madmen_network:
+        external: true
