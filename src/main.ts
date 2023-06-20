@@ -73,4 +73,3 @@ const job = new CronJob(process.env.CRON_TIME || "0 0 0 0 0", async () => {
 
 init_msg();
 
-console.log("Got the env: ", process.env);
